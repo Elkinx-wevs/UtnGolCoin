@@ -1,2 +1,0 @@
-# UtnGolCoin
-GolCoin
