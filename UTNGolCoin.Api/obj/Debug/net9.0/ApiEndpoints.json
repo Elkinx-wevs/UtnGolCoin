@@ -1,0 +1,144 @@
+[
+  {
+    "ContainingType": "UTNGolCoin.API.Controllers.BonusesController",
+    "Method": "AssignDailyBonus",
+    "RelativePath": "api/Bonuses/daily",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UTNGolCoin.API.DTOs.UserIdRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UTNGolCoin.API.Controllers.BonusesController",
+    "Method": "AssignWelcomeBonus",
+    "RelativePath": "api/Bonuses/welcome",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UTNGolCoin.API.DTOs.UserIdRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UTNGolCoin.API.Controllers.PredictionsController",
+    "Method": "CreatePrediction",
+    "RelativePath": "api/Predictions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "UTNGolCoin.API.DTOs.CreatePredictionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UTNGolCoin.API.Controllers.PredictionsController",
+    "Method": "SettlePredictions",
+    "RelativePath": "api/Predictions/settle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "UTNGolCoin.API.DTOs.SettlePredictionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UTNGolCoin.API.Controllers.PredictionsController",
+    "Method": "GetUserPredictions",
+    "RelativePath": "api/Predictions/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[UTNGolCoin.API.DTOs.PredictionDto, UTNGolCoin.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UTNGolCoin.API.Controllers.WalletsController",
+    "Method": "GetWallet",
+    "RelativePath": "api/Wallets/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UTNGolCoin.API.DTOs.WalletDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UTNGolCoin.API.Controllers.WalletsController",
+    "Method": "GetTransactions",
+    "RelativePath": "api/Wallets/{userId}/transactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[UTNGolCoin.API.DTOs.TransactionDto, UTNGolCoin.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
