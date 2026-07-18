@@ -1,1 +1,0 @@
-# Proyecto-Integrador-UTN-GolMundial-2026-Compartido
